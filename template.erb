@@ -1,0 +1,9 @@
+______
+|    |        Letters available:
+|    <%= "#{game.man[:head]}" %>        <%= "#{game.game_data["avail_letters"][0..12].join(' ')}" %>
+|   <%= "#{game.man[:body]}" %>       <%= if game.game_data["avail_letters"].length > 13 then "#{game.game_data["avail_letters"][13..25].join(' ')}" end %>
+|   <%= "#{game.man[:legs]}" %>
+|          
+              <%= "#{game.game_data["word_display"]}" %>
+
+<%= game.prompt %>
